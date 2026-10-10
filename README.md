@@ -28,6 +28,14 @@ QQ 消息 ←→ NapCat (OneBot 协议) ←→ 本程序 (Python) ←→ DeepSee
 
 ## 下载与安装
 
+### 一键下载（不需要 git）
+
+直接下载完整项目压缩包：
+
+**[👉 点这里下载 ZIP](https://github.com/Orbital-Weave/ds-chat-QQ-ai/archive/refs/heads/main.zip)**
+
+解压后按下面步骤配置即可。
+
 ### 从源码运行（当前方式）
 
 ```bash
