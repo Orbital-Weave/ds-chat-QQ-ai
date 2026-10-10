@@ -1,6 +1,0 @@
-=== log ===
-f534d83 docs: 添加README，清除个人配置，提供人格模板
-043de13 ds聊天智能：QQ机器人 + DeepSeek Flash + 桌面UI + 托盘自启
-=== status ===
-=== push ===
-Everything up-to-date

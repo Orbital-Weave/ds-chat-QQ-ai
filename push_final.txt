@@ -1,8 +1,0 @@
-﻿git : To https://github.com/Orbital-Weave/ds-chat-QQ-ai.git
-所在位置 行:1 字符: 219
-+ ... 安装步骤" 2>&1 | Select-Object -Last 3; git push origin main 2>&1 | Out-F ...
-+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (To https://gith...-chat-QQ-ai.git:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-   f534d83..46710ad  main -> main
