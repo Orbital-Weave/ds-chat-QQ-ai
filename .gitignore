@@ -1,0 +1,41 @@
+# === 敏感信息（绝不上传）===
+.env
+.env.*
+!.env.example
+config/whitelist.yaml
+config/config.yaml
+data/
+logs/
+*.log
+
+# === 打包产物（太大，不传）===
+dist_final/
+dist/
+build/
+*.spec
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === 用户数据备份 ===
+QQBot_userdata_backup/
+
+# === 临时诊断文件 ===
+diag*.txt
+verify*.txt
+*.txt.bak
+desktop_*.txt
+git_check.txt
+git_check*.txt
+
+# === IDE/系统 ===
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# === PyInstaller ===
+_internal/
+*.manifest

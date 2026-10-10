@@ -1,0 +1,23 @@
+=== 将提交的文件 ===
+A  .env.example
+A  .gitignore
+A  bot/__init__.py
+A  bot/config.py
+A  bot/core.py
+A  bot/llm.py
+A  bot/napcat.py
+A  bot/onebot.py
+A  bot/stickers.py
+A  build.ps1
+A  config/personas/dsh.yaml
+A  gui/__init__.py
+A  gui/main_window.py
+A  gui/pages.py
+A  icon.ico
+A  import_check.txt
+A  main.py
+A  requirements.txt
+=== 检查敏感文件是否被排除 ===
+.env 被忽略: True
+whitelist 被忽略: True
+dist_final 被忽略: True
