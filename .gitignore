@@ -4,6 +4,8 @@
 !.env.example
 config/whitelist.yaml
 config/config.yaml
+config/personas/*.yaml
+!config/personas/example.yaml
 data/
 logs/
 *.log
@@ -13,6 +15,7 @@ dist_final/
 dist/
 build/
 *.spec
+icon.ico
 __pycache__/
 *.pyc
 *.pyo
