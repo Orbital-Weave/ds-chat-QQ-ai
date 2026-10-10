@@ -6,7 +6,7 @@
 # ============================================================
 param([string]$Target = "dist_final")
 
-$proj = "C:\Users\单长宇\Python项目\qqbot-v3"
+$proj = $PSScriptRoot
 Set-Location $proj
 
 Write-Output "== 1/6 关闭运行中的 QQBot =="
@@ -36,7 +36,8 @@ if (Test-Path $final) {
 }
 
 Write-Output "== 3/6 打包到全新目录（不碰现有部署） =="
-& "C:\yuzhuang\Anaconda\python.exe" -m PyInstaller --noconfirm --clean --windowed --name QQBot --icon icon.ico --distpath dist_new --exclude-module PySide6.QtNetwork --exclude-module PySide6.QtWebEngineCore --exclude-module PySide6.QtWebEngineWidgets --exclude-module PySide6.QtWebChannel --exclude-module PySide6.QtMultimedia --exclude-module PySide6.QtQml --exclude-module PySide6.QtQuick --exclude-module PySide6.QtSvg --exclude-module PySide6.QtTest --exclude-module PySide6.QtSql main.py
+$python = if ($env:PYTHON_EXE) { $env:PYTHON_EXE } else { "python" }
+& $python -m PyInstaller --noconfirm --clean --windowed --name QQBot --icon icon.ico --distpath dist_new --exclude-module PySide6.QtNetwork --exclude-module PySide6.QtWebEngineCore --exclude-module PySide6.QtWebEngineWidgets --exclude-module PySide6.QtWebChannel --exclude-module PySide6.QtMultimedia --exclude-module PySide6.QtQml --exclude-module PySide6.QtQuick --exclude-module PySide6.QtSvg --exclude-module PySide6.QtTest --exclude-module PySide6.QtSql main.py
 if ($LASTEXITCODE -ne 0) { Write-Output "❌ 打包失败，中止（现有部署未受影响）"; exit 1 }
 
 $new = Join-Path $proj "dist_new\QQBot"
